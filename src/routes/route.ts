@@ -18,7 +18,7 @@ export class Routes {
         app.route('/api/articles/:id/content').get(this.articleCtrl.getArticleContent);
         app.route('/api/articles/:id/comments').post(this.commentCtrl.postComment);
         app.route('/api/articles/:id/comments').get(this.commentCtrl.getComments);
-        app.route('/api/articles/:id/comment').get(this.commentCtrl.getComment);
+        app.route('/api/articles/:id/commentid').get(this.commentCtrl.getComment);
         app.route('/api/articles/:id/conc').post(this.commentCtrl.commentOnComment);
         app.route('/api/articles/:id/conc').get(this.commentCtrl.getCommentOnComment);
     }
