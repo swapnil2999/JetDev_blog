@@ -40,4 +40,4 @@ Comment.init({
 
 Comment.hasMany(Comment, { as: 'comments', foreignKey: 'parentId' });
 Comment.belongsTo(Comment, { as:'comment', foreignKey: 'parentId' });
-//Comment.sync({force : true});
+Comment.sync({force : true});

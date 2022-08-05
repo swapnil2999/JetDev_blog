@@ -39,4 +39,4 @@ Article.init({
 Article.hasMany(Comment, { as: 'comments', foreignKey: 'articleId' });
 Comment.belongsTo(Article, { as:'articles', foreignKey: 'articleId' });
 // This creates the table if it doesn't exist (and does nothing if it already exists)
-//Article.sync({force : true});
+Article.sync({force : true});
